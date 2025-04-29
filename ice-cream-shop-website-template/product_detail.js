@@ -11,6 +11,7 @@ querySnapshot.forEach((doc) => {
         <div class="product">
             <h3>${doc.data().name || "No Name Given"}</h3>
             <p>${doc.data().price || "No Price Given"}</p>
+            <p>${doc.data().image || "No Image Given"}</p>
             <p>${doc.data().description || "No Description Given"}</p>
             <button class="come_back" onclick="window.location.href = './home.html'">Come Back</button>
         </div>
